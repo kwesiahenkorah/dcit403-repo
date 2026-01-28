@@ -28,8 +28,8 @@ class SensorAgent(Agent):
 
 
 async def main():
-    jid = "sensoragent@xmpp.jp"       # Use your XMPP JID
-    password = "Kwesi316"             # Use your password
+    jid = "sensoragent@xmpp.jp"       
+    password = "Kwesi316"             
 
     agent = SensorAgent(jid, password)
     
@@ -37,7 +37,6 @@ async def main():
     await agent.start()
     print(f"Agent {jid} started successfully!")
     
-    # Keep the agent running
     try:
         while True:
             await asyncio.sleep(1)
@@ -47,5 +46,4 @@ async def main():
         print("Agent stopped.")
 
 if __name__ == "__main__":
-    # Run the async main function
-    asyncio.run(main())
+     asyncio.run(main())
