@@ -36,7 +36,7 @@ class SensorAgent(Agent):
         self.environment = DisasterEnvironment()
 
         # Set who receives alerts
-        self.rescue_jid = "rescueagent@xmpp.jp"  # change if needed
+        self.rescue_jid = "rescueagent99@xmpp.jp"  # change if needed
 
         behaviour = self.SenseBehaviour(period=5)
         behaviour.environment = self.environment

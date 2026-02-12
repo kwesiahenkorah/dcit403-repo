@@ -35,7 +35,7 @@ class SensorAgent(Agent):
 
     async def setup(self):
         self.environment = DisasterEnvironment()
-        self.coordinator_jid = "coordinatoragent@xmpp.jp"  # create this XMPP account
+        self.coordinator_jid = "coordinatoragent99@xmpp.jp"  
 
         behaviour = self.SenseBehaviour(period=5)
         behaviour.environment = self.environment
